@@ -1,0 +1,7 @@
+**/target/
+**/.mvn/wrapper/*.jar
+**/.vscode/
+**/bin/
+**/.settings
+**/.classpath
+**/.project
