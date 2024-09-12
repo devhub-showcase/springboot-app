@@ -1,0 +1,15 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: basic-app
+  description: "team-a: basic-app"
+  annotations:
+    argocd/app-selector: "team-a-gitops=basic-app"
+    argocd/app-namespace: team-a-gitops
+    backstage.io/kubernetes-id: basic-app
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=basic-app'
+spec:
+  type: resources
+  lifecycle: production
+  owner: group:default/ops
