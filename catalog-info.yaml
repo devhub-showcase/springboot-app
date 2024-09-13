@@ -9,6 +9,7 @@ metadata:
     argocd/app-namespace: team-a-gitops
     backstage.io/kubernetes-id: basic-app
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=basic-app'
+    janus-idp.io/tekton: basic-app
 spec:
   type: resources
   lifecycle: production
