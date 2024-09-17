@@ -2,14 +2,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: basic-app
-  description: "team-a: basic-app"
+  name: basic-springboot-app
+  description: "team-a: basic-springboot-app"
   annotations:
-    argocd/app-selector: "team-a-gitops=basic-app"
+    argocd/app-selector: "team-a-gitops=basic-springboot-app"
     argocd/app-namespace: team-a-gitops
-    backstage.io/kubernetes-id: basic-app
-    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=basic-app'
-    janus-idp.io/tekton: basic-app
+    janus-idp.io/tekton: basic-springboot-app
+    backstage.io/kubernetes-id: basic-springboot-app
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=basic-springboot-app'
 spec:
   type: resources
   lifecycle: production
