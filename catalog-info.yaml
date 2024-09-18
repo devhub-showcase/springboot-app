@@ -10,6 +10,7 @@ metadata:
     janus-idp.io/tekton: basic-springboot-app
     backstage.io/kubernetes-id: basic-springboot-app
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=basic-springboot-app'
+    sonarqube.org/project-key: ci-pipeline-ref-basic-springboot-app
 spec:
   type: resources
   lifecycle: production
