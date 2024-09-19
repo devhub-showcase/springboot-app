@@ -1,0 +1,17 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: springboot-app
+  description: "team-sa: springboot-app"
+  annotations:
+    argocd/app-selector: "team-sa-gitops=springboot-app"
+    argocd/app-namespace: team-sa-gitops
+    janus-idp.io/tekton: springboot-app
+    backstage.io/kubernetes-id: springboot-app
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=springboot-app'
+    sonarqube.org/project-key: ci-pipeline-ref-springboot-app
+spec:
+  type: resources
+  lifecycle: production
+  owner: group:default/ops
