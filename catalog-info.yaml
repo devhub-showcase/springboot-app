@@ -1,0 +1,21 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: springboot-app
+  description: "team-alpha: springboot-app"
+  annotations:
+    argocd/app-selector: "team-alpha-cicd=springboot-app"
+    argocd/app-namespace: team-alpha-cicd
+    janus-idp.io/tekton: springboot-app
+    backstage.io/kubernetes-id: springboot-app
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=springboot-app'
+    sonarqube.org/project-key: ci-pipeline-ref-springboot-app
+  links:
+    - url: https://devspaces.apps.dev-acm.v3socp.boo/#https://github.com/devhub-showcase/springboot-app?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+      title: CodeReady Workspaces (VS Code)
+      icon: web
+spec:
+  type: resources
+  lifecycle: production
+  owner: group:default/ops
