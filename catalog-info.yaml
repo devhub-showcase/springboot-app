@@ -12,6 +12,7 @@ metadata:
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=springboot-app'
     sonarqube.org/project-key: ci-pipeline-ref-springboot-app
     github.com/project-slug: devhub-showcase/springboot-app
+    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://devspaces.apps.dev-acm.v3socp.boo/#https://github.com/devhub-showcase/springboot-app?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
       title: CodeReady Workspaces (VS Code)
