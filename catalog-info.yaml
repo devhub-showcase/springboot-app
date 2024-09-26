@@ -5,7 +5,7 @@ metadata:
   name: springboot-app
   description: "team-alpha: springboot-app"
   annotations:
-    argocd/app-selector: "team-alpha-cicd=springboot-app"
+    argocd/app-selector: "team-alpha-cicd=springboot-app-test"
     argocd/instance-name: team-alpha-cicd
     janus-idp.io/tekton: springboot-app
     backstage.io/kubernetes-id: springboot-app
